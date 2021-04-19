@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-ENV CHECKM_VERSION=1.1.2
+ENV CHECKM_VERSION=1.1.3
 COPY run_checkm.sh /usr/local/bin/
 COPY config_location.patch /root/
 RUN apt-get update && \

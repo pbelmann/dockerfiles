@@ -13,7 +13,6 @@ RUN apt-get update && \
     rm -r /root/pplacer* && \
     patch --binary -i /root/config_location.patch /usr/local/lib/python3.6/dist-packages/checkm/checkmData.py && \
     chmod +x /usr/local/bin/run_checkm.sh && \
-    apt-get purge -y wget unzip && \
     apt-get autoremove -y --purge && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
